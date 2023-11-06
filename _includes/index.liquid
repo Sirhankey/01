@@ -1,0 +1,12 @@
+---
+layout: main
+title: Home Page
+---
+
+Aqui uma lista de linguagens:
+
+<ul>
+    {% for lang in collections.linguagens %}
+        <li><a href="{{ lang.url }}">{{ lang.data.title }}</a></li>
+    {% endfor %}
+</ul>
